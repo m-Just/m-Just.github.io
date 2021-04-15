@@ -10,19 +10,15 @@ redirect_from:
 
 What is out-of-distribution generalization?
 ======
-Let us begin with a motivating example. Imagine that you are a farmer living in a remote village. For the whole life, you have been farming sheep on the grassland owned by your family. To you, sheep and grasslands are two inseparable notions. You would immediately think of the other when you try to picture either of the two. One day, you received a postcard from your friend traveling around the world. In the picture on the postcard, there is a strange creature standing on a vast land of sands. It had taken you some time before two nouns, camel and desert, that you once read in a book suddenly occurred to you. Like sheep and grasslands, they are also two inseparable notions from your limited perspective. When you are given a picture and asked to tell whether it is a sheep or a camel, you could immediately  answer by judging from the background of the picture. In usual cases, this simple solution works almost perfectly, however, it would also fail unexpectely when something unusal happens. For instance, sheep in desert and camel on grassland.
+Let us begin with a motivating example. Imagine that you are a farmer living in a remote village. For the whole life, you have been farming sheep on the grassland owned by your family. To you, sheep and grasslands are two inseparable notions. You would immediately think of the other when you try to picture either of the two. One day, you received a postcard from your friend traveling around the world. In the picture on the postcard, there is a strange creature standing on a vast land of sands. It had taken you some time before two nouns, camel and desert, that you once read in a book suddenly occurred to you. Like sheep and grasslands, they are also two inseparable notions from your limited perspective. When you are given a picture and asked to tell whether it is a sheep or a camel, you could immediately answer by judging from the background of the picture. In usual cases, this simple solution works almost perfectly, however, it would also fail unexpectedly when something unusual happens. For instance, sheep in desert and camels on grassland. In this respect, learning machines are of no exception and are also prone to make such mistakes when the test data are not sampled from the training distribution.
 
-Generalizing outside of the training distribution is an open challenge for current machine learning systems. As the name suggests, out-of-distribution generalization is a task that aims to overcome such challenge, where a model must generalize to new distributions at test time without seeing any training data from them. <!-- Quoted from "Out-of-Distribution Generalization via Risk Extrapolation" -->
-The term has gain an increasing amount of attention in recent years, primarily due to significant performance drops observed in state-of-the-art deep learning models when evaluated on non-i.i.d. test sets.
+Generalizing outside of the training distribution is an open challenge for current machine learning systems. As its name suggests, out-of-distribution generalization aims to overcome such challenge, where a model must generalize to new distributions at test time without seeing any training data from them. <!-- Quoted from "Out-of-Distribution Generalization via Risk Extrapolation" -->
+In a broader sense, we are also concerned with the particular assumptions that have to be made for out-of-distribution generalization to be possible.
+
+By the generality of this notion, the idea behind out-of-distribution generalization is not entirely new. Over the years, it has taken on various forms in multiple branches of machine learning research. To name a few, we have domain generalization, stable learning, adversarial robustness, and zero-shot learning.
+
+The term has gain an increasing amount of attention, primarily due to significant performance drops observed in state-of-the-art deep learning models when evaluated on non-i.i.d. test sets.
 While neural networks often exhibit super-human generalization performance on the training distribution, they can be extremely sensitive to minute changes in distribution that are often insusceptible to human. <!-- Quoted from "Out-of-Distribution Generalization via Risk Extrapolation" -->
-
-By the generality of this notion, the idea behind out-of-distribution generalization is not entirely new. Over the years, it has taken on many different forms in multiple branches of machine learning research. To name a few, we have domain generalization, stable learning, adversarial robustness, and zero-shot learning.
-
-
-
-We assume a fixed underlying task, and access to labeled data from multiple training environments. We also assume that variation in these environments is somewhat representative of the variations we will see at test time. However, we also seek to make good predictions even when these variations are extreme in magnitude.
-
-
 
 
 
