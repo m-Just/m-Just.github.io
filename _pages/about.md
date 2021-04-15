@@ -8,6 +8,24 @@ redirect_from:
   - /about.html
 ---
 
+What is out-of-distribution generalization?
+======
+Let us begin with a motivating example. Imagine that you are a farmer living in a remote village. For the whole life, you have been farming sheep on the grassland owned by your family. To you, sheep and grasslands are two inseparable notions. You would immediately think of the other when you try to picture either of the two. One day, you received a postcard from your friend traveling around the world. In the picture on the postcard, there is a strange creature standing on a vast land of sands. It had taken you some time before two nouns, camel and desert, that you once read in a book suddenly occurred to you. Like sheep and grasslands, they are also two inseparable notions from your limited perspective. When you are given a picture and asked to tell whether it is a sheep or a camel, you could immediately  answer by judging from the background of the picture. In usual cases, this simple solution works almost perfectly, however, it would also fail unexpectely when something unusal happens. For instance, sheep in desert and camel on grassland.
+
+Generalizing outside of the training distribution is an open challenge for current machine learning systems. As the name suggests, out-of-distribution generalization is a task that aims to overcome such challenge, where a model must generalize to new distributions at test time without seeing any training data from them. <!-- Quoted from "Out-of-Distribution Generalization via Risk Extrapolation" -->
+The term has gain an increasing amount of attention in recent years, primarily due to significant performance drops observed in state-of-the-art deep learning models when evaluated on non-i.i.d. test sets.
+While neural networks often exhibit super-human generalization performance on the training distribution, they can be extremely sensitive to minute changes in distribution that are often insusceptible to human. <!-- Quoted from "Out-of-Distribution Generalization via Risk Extrapolation" -->
+
+By the generality of this notion, the idea behind out-of-distribution generalization is not entirely new. Over the years, it has taken on many different forms in multiple branches of machine learning research. To name a few, we have domain generalization, stable learning, adversarial robustness, and zero-shot learning.
+
+
+
+We assume a fixed underlying task, and access to labeled data from multiple training environments. We also assume that variation in these environments is somewhat representative of the variations we will see at test time. However, we also seek to make good predictions even when these variations are extreme in magnitude.
+
+
+
+
+
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
